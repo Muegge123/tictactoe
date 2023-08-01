@@ -1,0 +1,46 @@
+body {
+  background-color: black; /* Hintergrundfarbe schwarz */
+}
+
+table {
+  border-collapse: collapse;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  table-layout: fixed;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  border: 5px solid white; /* Weiße Linien mit einer Stärke von 5px */
+  cursor: pointer;
+}
+
+td svg line {
+  stroke: yellow; /* X in gelber Farbe */
+}
+
+td svg circle {
+  stroke: blue; /* O in blauer Farbe */
+}
+
+tr:nth-child(3n + 1) td {
+  border-top: none;
+}
+
+td:nth-child(3n + 1) {
+  border-left: none;
+}
+
+td:last-child {
+  border-right: none;
+  border-bottom: none;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
